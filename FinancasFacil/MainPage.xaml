@@ -39,10 +39,10 @@
                 MaxLength="10"
                 Text=""/>
             <Button
-                x:Name="BuscarInformacoes"
+               
                 Text="Ok" 
                 SemanticProperties.Hint="Busca Informação"
-                Clicked="CliqueBuscarInformacoes"
+                Clicked="MostraPaginaDetalhes"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>

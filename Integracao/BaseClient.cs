@@ -5,7 +5,7 @@ namespace FinancasFacil
     public  class BaseClient
     {
         static readonly HttpClient _client = new HttpClient();
-        string _baseUrl = "https://q55q37rx-7029.brs.devtunnels.ms/";
+        string _baseUrl = "https://d83stmbm-7029.brs.devtunnels.ms/";
                            
         public async Task<HttpResponseMessage> GetShare(string shareSymbol) 
         {
@@ -16,6 +16,11 @@ namespace FinancasFacil
                 throw new Exception("Erro ao buscar informações da ação");
             }
             return response;        
+        }
+
+        public async Task<HttpResponseMessage> GetShare(object simboloAcao)
+        {
+            throw new NotImplementedException();
         }
     }
 }
